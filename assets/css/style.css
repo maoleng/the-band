@@ -1,0 +1,66 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+
+}
+
+.header {
+    width: 100%;
+    height: 46.5px;
+    background-color: black;
+
+}
+
+.header__menu li {
+    /* Do display của thẻ li là list item nên nó xuống dòng
+    -> CSS để nó không xuống dòng */
+    display: inline-block;    
+}
+
+/*  (header__menu li a) khác với (header__menu>li>a)
+    (header__menu li a): chỉ cần có thẻ a trong li thì sẽ style vào thẻ a
+    (header__menu>li>a): phải có thẻ a nằm trong div nằm trong header__menu liền kề mới css
+        nếu có thẻ ngăn cách thì không css */
+.header__menu li a {
+    color: white;
+    text-decoration: none;
+    /* Sửa chiều cao của hộp chứa chữ */
+    line-height: 46px;
+    padding-left: 24px;
+    padding-right: 24px;
+    /* Thẻ a mặc định là display inline nên nó không tự chỉnh sửa kích thước theo line-height được
+    -> Chuyển inline thành inline block */
+    display: inline-block;
+}
+
+.header__menu li:hover a {
+    color: black;
+    background-color: #CCCCCC;
+}
+
+.header__menu .header__submenu {
+    display: none;
+}
+
+
+
+.slider {
+
+}
+
+.container {
+
+}
+
+.footer {
+
+}
